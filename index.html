@@ -2,8 +2,116 @@
 <html>
 	<head>
 		<title>test</title>
+		<meta name="viewport" content="width=400" />
+		<style>
+		
+		
+			body {
+				background-color:orange;
+			}
+			
+			h1 {
+				background-color:green;
+				width:400px;
+			}
+			
+			ul, li {
+				float:left;
+			}
+			
+			ul {
+				padding-left:0;
+			}
+			
+			li {
+				font-size:2em;
+				list-style-type:none;
+				background-color:black;
+				color:white;
+				margin-right:10px
+			}
+			
+			
+		
+			/*
+		
+			@media all and (min-width:500px) and (max-width:800px) {
+			
+				body {
+					background-color:red;
+				}	
+				
+				h1 {
+					background-color:black;
+					color:white;
+				}			
+			
+			}
+			
+			@media all and (min-width:900px) {
+			
+				body {
+					background-color:gainsboro;
+				}			
+			
+				h1 {
+					background-color:blue;
+					color:yellow;
+				}					
+			}
+			*/
+			
+			
+			@media all and (orientation:portrait) {
+				body {
+					background-color:red;
+				}
+			}
+			
+			@media all and (orientation:landscape) {
+				body {
+					background-color:blue;
+				}
+			}
+			
+			@media all and (width:400px) {
+				body {
+					background-color:yellow;
+				}
+				
+				h1 {
+					width:300px;
+				}
+				
+				ul, li {
+					float:none;
+				}
+				
+				li {
+					margin-bottom:5px;
+				}
+				
+			}
+			
+			@media all and (orientation:landscape) and (width:400px) {
+				
+				li {
+					font-size:1em;
+				}
+				
+			}
+				
+		
+		
+		</style>
 	</head>
 	<body>
 		<h1> test! </h1>
+		<ul>
+			<li>home</li>
+			<li>my cat</li>
+			<li>my video games</li>
+			<li>my irrelevant computers</li>
+		</ul>
 	</body>
 </html>
